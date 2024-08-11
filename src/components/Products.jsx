@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Product from "./Product";
 import { motion } from "framer-motion";
+import Arqitel from "/videos/Arqitel.mp4";
+import Cula from "/videos/Cula.mp4";
+import TTR from "/videos/TTR.mp4";
+import webflow from "/videos/webflow.mp4";
 
 function Products() {
   var products = [
@@ -57,28 +61,28 @@ function Products() {
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full"
           >
-            <video src="public\videos\Arqitel project video 4_3.mp4" autoPlay loop></video>
+            <video src={Arqitel} autoPlay loop></video>
           </motion.div>
           <motion.div
             animate={{ y: -pos + "rem" }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full bg-sky-300 "
           >
-            <video src="public\videos\TTR project video 4_3_H.264.mp4" autoPlay loop></video>
+            <video src={TTR} autoPlay loop></video>
           </motion.div>
           <motion.div
             animate={{ y: -pos + "rem" }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full bg-sky-400 "
           >
-            <video src="public\videos\webflow-education-promo.mp4" autoPlay loop></video>
+            <video src={webflow} autoPlay loop></video>
           </motion.div>
           <motion.div
             animate={{ y: -pos + "rem" }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
             className="w-full h-full bg-sky-500 "
           >
-            <video src="public\videos\Cula_promo_new_4_3.mp4" autoPlay loop></video>
+            <video src={Cula} autoPlay loop></video>
           </motion.div>
         </motion.div>
       </div>
